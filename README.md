@@ -4,9 +4,9 @@
 
 ### WHAT IS THIS ?
 <p>
-AHA (Android Hybrid App) is a emulator full app for android.<br/>
-You can use your CMS URL or your Responsive web URL like a Android app.<br/>
-<b>NOTE:</b> You need to export this project with Android Studio if you want to install .apk file.<br/>
+AHA (Android Hybrid App) is a full emulator app for android.<br/>
+You can use your CMS URL or your responsive web URL like a Android app.<br/>
+<b>NOTE:</b> You need to export this project using Android Studio if you want to install the .apk file.<br/>
 <b>NOTE:</b> If you want just to upload the app. Use: Configure on-device developer options
 
 </p>
@@ -43,15 +43,15 @@ You can use your CMS URL or your Responsive web URL like a Android app.<br/>
 	
 	
 ### HOWTO ?
-`1` <b>Step:</b> You need a `Responsive` URL <br/>
+`1` <b>Step:</b> You need a `responsive` URL <br/>
 `2` <b>Step:</b> You need edit `AHA/app/src/main/java/aha/ircayuda/org/MainActivity.java` <br/><b>Line 25:</b> `String target_url=`<br/>
 `3` <b>Step:</b> Gmail Login `AHA/app/src/main/java/aha/ircayuda/org/MainActivity.java` <br/><b>Line 173:</b> `if (url.contains("Your-Google-CallBack-URL")) {return false; }`<br/>
-on this step you need to make sure you got a gmail API + a APP on Google for make this login work in your web first.<br/>
+on this step you need to make sure you got a gmail API + a APP on Google for make this login work into your web first.<br/>
 `4` <b>Step:</b> Facebook Login `AHA/app/src/main/java/aha/ircayuda/org/MainActivity.java` <br/><b>Line 174:</b> `if (url.contains("Your-Facebook-CallBack-URL")) {return false;}`<br/>
-on this step you need to make sure you got a Facebook Developer API for make this login work in your web first.<br/>
+on this step you need to make sure you got a Facebook Developer API for make this login work into your web first.<br/>
 `5` <b>Step:</b> Edit Bundle for OneSignal. ` AHA/app/build.gradle`<br/>
 <b>Line 29:</b> `onesignal_app_id : 'YOUR-OneSignal-APP-ID'`<br/>
-`6` <b>Step:</b> Remember this is a custom app. So you need to edit ID APP: `applicationId` in ` AHA/app/build.gradle`<br/>
+`6` <b>Step:</b> Remember: This is a custom app, so you need to edit ID APP: `applicationId` in ` AHA/app/build.gradle`<br/>
 <b>Line 21:</b> `applicationId "aha.ircayuda.org"` <br/>
 
 ### Configure on-device developer options
